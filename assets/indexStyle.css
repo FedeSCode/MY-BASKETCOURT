@@ -1,0 +1,104 @@
+
+
+body{
+    background:#000000;
+    background: linear-gradient(to right , #000000,#340202);    
+    display:flex;
+    align-items:center;
+    height:800px;
+    
+
+}
+
+h1{
+    color: #ffbd4a;
+}
+
+#logoLong{
+    padding-top: 30%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.containerIndex{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/**************************menu******************************************/
+
+.menu{
+    position:relative;
+}
+.menu ul li {
+    list-style: none;
+    color: #ffbd4a;
+    padding: 10px;
+}
+
+
+
+.menu ul li a:link, a:visited {
+    background-color:#340202;
+    color: #ffbd4a;
+    padding: 14px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+
+}
+  
+.menu ul li a:hover {
+    color: rgb(218, 215, 217);
+}
+
+.menu ul li a:active {
+    color: blue;
+}
+
+
+/**************************Left******************************************/
+
+.containerIndex #leftDiv{
+    position: relative;
+    background: black; 
+    border-right: 10px solid #ffbd4a;
+    padding: 50px;
+}
+
+
+#leftDiv ul li {
+    list-style: none;
+    color: #ffbd4a;
+    padding: 10px;
+}
+
+
+
+#leftDiv ul li a:link, a:visited {
+    background-color:#340202;
+    color: #ffbd4a;
+    padding: 14px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+
+}
+  
+
+#leftDiv ul li a:hover {
+    color: rgb(218, 215, 217);
+}
+
+#leftDiv ul li a:active {
+    color: blue;
+}
+
+/**************************Right*****************************************/
+.containerIndex #rightDiv{
+    position: relative;
+    background-image:  url('/ImgLogo/wallpaperTerraindeBasket.jpg' );
+    background-repeat: no-repeat;
+}

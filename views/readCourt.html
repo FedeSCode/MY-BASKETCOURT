@@ -1,0 +1,76 @@
+{{>header}}
+
+    <link rel="stylesheet" href="/assets/readCourtsStyle.css">
+    
+    <div class="readCourts" id="readCourts">
+        <div id="LesImg" class="LesImg">
+
+            <div class="carrousel" id="carrousel">
+                <div class="imagesCarrousel" id="imagesCarrousel">
+                    {{#image}}
+                    <img id="imgDiapo" class="imgDiapo" src="{{img}}" height="400px">
+                    {{/image}}
+                </div>   
+            </div>
+
+            <div id="ImgButtons" class="ImgButtons" >
+                <button id="Button Left" class="Button Left" onclick="dplcmt(-1)">&#10094;</button>
+                <button id="Button Right" class="Button Right" onclick="dplcmt(1)">&#10095;</button>
+            </div>
+
+            <script type="text/javascript" language="javascript" >
+                var position =1;
+                printImg(position);
+
+                function dplcmt(n){
+                    printImg(position += n)
+
+                }
+
+                function printImg(n)
+                {
+                    var i ;
+                    var imgTable = document.getElementsByClassName("imgDiapo");
+                    for(i=0;i<imgTable.length;i++){
+                        imgTable[i].style.display="none";
+                    }
+                    if(n>imgTable.length){position=1}
+                    if(n<1){position=imgTable.length}
+
+                    imgTable[position-1].style.display="block";
+                }
+            </script>
+        </div>
+
+
+        <div class="LeftReadCourts" id="LeftReadCourts">
+         
+            <h1>{{nameCourt}}</h1>
+
+            <p> {{adresse}} </p>
+
+            <p> {{description}}</p>
+
+            <p> {{capacity}}</p>
+
+            <p> {{}} </p>
+        </div>
+
+
+        <div class="RightReadCourts" id="RightReadCourts">
+            <div id="imgMaps" class ="imgMaps">
+                <p>
+                    <a  href="{{httpMaps}}" target="_blank" ><img id="MapsImg" class="MapsImg" src="{{imgMaps}}" height="400px" width="600px"></a>
+                </p>
+                <p>
+                    il y a :
+                    <input type="button" value="+">
+                </p>
+            </div>
+        </div>
+
+
+       
+    </div>
+{{>footer}}
+

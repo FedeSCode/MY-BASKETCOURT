@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    padding-top: 100px;
+    /*background:   linear-gradient(to left, #29df26 , #ccba16);*/
+    background:   linear-gradient(to left, #155366 , #e8e0d6);
+    background-color: white;
+}
+
+nav #logoLong{
+    height:40px;
+    width: 150px;; 
+}
+/**********************************  SEARCH  ***************************************/
+.search {
+    display: block;
+    
+}
+

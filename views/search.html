@@ -1,0 +1,43 @@
+{{> header}}
+  <link rel="stylesheet" href="/assets/searchStyle.css">
+  <div class="search" id="search">  
+    <div>
+      <div>
+        <h1>{{num_found}} terrains trouvées {{#page}} (page {{page}}/{{num_pages}}) {{/page}}</h1>
+      </div>
+    </div>
+
+
+
+    <div>
+        {{#results}}
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-md-4" >
+              <a href="/readCourt/{{entry}}">
+                <div class="card text-white bg-dark border-dark mb-3">
+                  <img  class="card-img-top" src="{{imgLogo}}" height="400px" width="500px">
+                  <div class="card-body ">
+                    <h5 class="card-title">{{nameCourt}}</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        {{/results}}
+    </div>
+
+    {{#next_page}}
+    <div aria-label="Page navigation example">
+      <div class="container">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="/search?query={{query}}&page={{next_page-1}}">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="/search?query={{query}}&page={{next_page}}">Next</a></li>
+        </ul>
+      </div>
+    </div>
+    {{/next_page}}
+  </div>
+
+{{> footer}}

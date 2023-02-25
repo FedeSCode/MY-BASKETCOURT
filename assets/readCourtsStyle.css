@@ -1,0 +1,53 @@
+.LesImg{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    position: relative;
+}
+.LesImg .ImgButtons .Button {
+    border: none;
+    width: 50px;
+    height:50px;
+    font-size:24px;
+    cursor: pointer;
+    color:#fff;
+    background-color: #666;
+    border-radius: 50px;
+}
+.LesImg .ImgButtons:hover{
+    color:#155366;
+}
+.LesImg .imgDiapo{
+    width: 100%;
+    border-radius: 25px;
+    background-color: #666;
+    padding: 3px;
+}
+
+.LesImg .ImgButtons .Left{
+    position:absolute;
+    top: 143px;
+    left: -25px;
+}
+
+.LesImg .ImgButtons .Right{
+    position:absolute;
+    top: 143px;
+    right: -25px;
+}
+
+.RightReadCourts .imgMaps .MapsImg{
+    position:-ms-page;
+}
+
+.RightReadCourts .imgMaps .MapsImg{
+    position:relative;
+    top: 0px;
+    left: 55% ;
+}
+.RightReadCourts .imgMaps .MapsImg{
+
+    border-radius: 25px;
+  
+} 
+
