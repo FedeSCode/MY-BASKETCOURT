@@ -27,8 +27,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-I start this project as a Web devellopment project form my Web module in college.
-I wanted to create a simple web application that would be able to manage the basket courts in Marseille.
+I start this project as a Web development project from my Web module in college. I wanted to create a simple web application that would be able to manage the basketball courts in Marseille
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
